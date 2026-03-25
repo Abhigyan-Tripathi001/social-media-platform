@@ -7,9 +7,13 @@ import jakarta.persistence.*;
 public class Friend {
 
     @Id
+    @Column(name = "friendshipID")
     private int friendshipId;
 
+    @Column(name = "userID1")
     private int userId1;
+    
+    @Column(name = "userID2")
     private int userId2;
 
     private String status; // pending / accepted

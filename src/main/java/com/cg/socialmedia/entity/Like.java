@@ -7,11 +7,15 @@ import java.time.LocalDateTime;
 @Table(name = "likes")
 public class Like {
 
-    @Id
-    private int likeId;
+	@Id
+	@Column(name = "likeID")
+	private int likeId;
 
-    private int postId;
-    private int userId;
+	@Column(name = "postID")
+	private int postId;
+
+	@Column(name = "userID")
+	private int userId;
 
     private LocalDateTime timestamp;
 

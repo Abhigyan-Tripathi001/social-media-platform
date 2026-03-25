@@ -7,10 +7,12 @@ import java.time.LocalDateTime;
 @Table(name = "notifications")
 public class Notification {
 
-    @Id
-    private int notificationId;
+	@Id
+	@Column(name = "notificationID")
+	private int notificationId;
 
-    private int userId;
+	@Column(name = "userID")
+	private int userId;
 
     private String content;
     private LocalDateTime timestamp;

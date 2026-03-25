@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Friends</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+	<h2>Friends</h2>
+
+	<div th:each="f : ${friends}">
+	    <p th:text="${f.userId2}"></p>
+	</div>
+
+	<h2>Messages</h2>
+
+	<div th:each="m : ${messages}">
+	    <p th:text="${m.messageText}"></p>
+	</div>
+
+</body>
+</html>

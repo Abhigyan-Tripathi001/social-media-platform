@@ -3,13 +3,17 @@ package com.cg.socialmedia.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "groups") // because GROUP is reserved keyword
+@Table(name = "group_data") // because GROUP is reserved keyword
 public class GroupEntity {
 
     @Id
+    @Column(name = "groupID")
     private int groupId;
 
+    @Column(name = "groupName")
     private String groupName;
+    
+    @Column(name = "adminID")
     private int adminId;
 
     // Constructors, Getters, Setters

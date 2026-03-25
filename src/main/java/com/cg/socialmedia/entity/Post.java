@@ -8,8 +8,10 @@ import java.time.LocalDateTime;
 public class Post {
 
     @Id
+    @Column(name = "postID")
     private int postId;
 
+    @Column(name = "userID")
     private int userId;
     private String content;
 

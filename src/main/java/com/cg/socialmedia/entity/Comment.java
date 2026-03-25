@@ -8,9 +8,13 @@ import java.time.LocalDateTime;
 public class Comment {
 
     @Id
+    @Column(name = "commentID")
     private int commentId;
 
+    @Column(name = "postID")
     private int postId;
+    
+    @Column(name = "userID")
     private int userId;
 
     private String commentText;

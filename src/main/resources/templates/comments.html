@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Comments</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+	<h2>Comments</h2>
+
+	<div th:each="c : ${comments}">
+	    <p th:text="${c.commentText}"></p>
+	</div>
+
+	<h2>Likes</h2>
+
+	<div th:each="l : ${likes}">
+	    <p>User ID: <span th:text="${l.userId}"></span></p>
+	</div>
+
+</body>
+</html>

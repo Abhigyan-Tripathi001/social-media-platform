@@ -7,6 +7,7 @@ import jakarta.persistence.*;
 public class User {
 
     @Id
+    @Column(name = "userID")
     private int userId;
 
     private String username;

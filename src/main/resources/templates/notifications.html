@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Notifications</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+	<h2>Notifications</h2>
+
+	<div th:each="n : ${notifications}">
+	    <p th:text="${n.content}"></p>
+	</div>
+
+	<h2>Groups</h2>
+
+	<div th:each="g : ${groups}">
+	    <p th:text="${g.groupName}"></p>
+	</div>
+
+</body>
+</html>

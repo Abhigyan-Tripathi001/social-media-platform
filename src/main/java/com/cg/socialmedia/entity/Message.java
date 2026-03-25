@@ -7,11 +7,15 @@ import java.time.LocalDateTime;
 @Table(name = "messages")
 public class Message {
 
-    @Id
-    private int messageId;
+	@Id
+	@Column(name = "messageID")
+	private int messageId;
 
-    private int senderId;
-    private int receiverId;
+	@Column(name = "senderID")
+	private int senderId;
+
+	@Column(name = "receiverID")
+	private int receiverId;
 
     private String messageText;
     private LocalDateTime timestamp;
